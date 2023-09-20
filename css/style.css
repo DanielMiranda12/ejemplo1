@@ -1,0 +1,81 @@
+/* Importacion de Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+/* selector universal */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+/* selector por etiqueta */
+span {
+    color: steelblue
+}
+/* selector por id */
+#option_one,  #option_three {
+    font-weight: 700;
+    background-color: chocolate;
+    margin-left: 20px;
+}
+
+/* selector por clase */
+.option_group {
+    background-color: black;
+}
+/* selector por atributo */
+:disabled {
+    background-color: red;
+}
+.option_group.other_option {
+    font-size: 50px;
+
+}
+
+#title_box {
+    color: rgb(0, 0, 184);
+    background-color: azure;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    text-transform: lowercase;
+    margin: 10px 20px 15px 25px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    word-spacing: 15px;
+    letter-spacing: 8;
+    font-size: 50px;
+    box-shadow: 0px 0px 10px 2px;
+    -webkit-box-shadow: 56px 55px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 56px 55px 5px 0px rgba(255, 0, 0, 0.75);
+    box-shadow: 56px 55px 5px 0px rgba(0, 17, 255, 0.75);
+}
+#box_father{
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    background-image: url(https://i.pinimg.com/originals/f7/0a/11/f70a11de3220a1550be53a873d9af8d5.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+/* #box_model{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+} */
+
+/* aplicacion de media quares */
+@media (min-width: 800px) and (max-width: 1200px){
+    body{
+        background-color: red;
+    }
+}
+#title_box{
+    text-align: left;
+}
+
+@media (max-width: 799px){
+    body{
+        background-image: url(https://i.pinimg.com/originals/f7/0a/11/f70a11de3220a1550be53a873d9af8d5.jpg) ;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
