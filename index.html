@@ -1,78 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="css/style_blefox.css">
     <title>principal</title>
 </head>
+
 <body>
-       <ul>
-        <li><a href="html/tablas.html">Ir a tablas</a></li>
-        <li><a href="html/formularios.html">ir a formularios</a></li>
-        <li><a href="html/texto.html">ir a texto</a></li>
-        <li><a href="html/semantica.html">ir a semantica</a></li>
-        <li><a href="html/agrupacion.html">ir a agrupacion</a></li>
-        <li><a href="html/estilos.html">ir a estilos</a></li>
-        <li><a href="html/flexbox.html">ir a flexbox</a></li>
-      </ul> 
-
-
-    <!-- <table border="1">
-        <caption>
-            TABLA DE POSCIONES
-        </caption>
-        <thead>
-            <tr>
-                <th>ESQUIPO</th>
-                <th>PARTIDO</th>
-                <th>PUNTOS</th>
-                <th>ESCUDOS</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>colombia</td>
-                <td>5</td>
-                <td>15</td>
-                <td>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Escudo_de_la_Federaci%C3%B3n_Colombiana_de_F%C3%BAtbol.png" alt="Escudo colombia" width="80px" height="80px">
-                </td>
-            </tr>
-            <tr>
-                <td>Brasil</td>
-                <td>1</td>
-                <td>32</td>
-                <td>
-                    <img src="img/Logo_Brasil.png" alt="escudo brasil" width="80px" height="80px">
-                </td>
-            </tr>
-            <tr>
-                <td>Argentina</td>
-                <td>5</td>
-                <td>12</td>
-                <td>
-                    <img src="img/aregentina.png" alt="escudo argentina" width="80px" height="80px">
-                </td>
-            </tr>
-            <tr>
-                <td>Venezuela</td>
-                <td>0</td>
-                <td>11</td>
-                <td>
-                    <img src="img/venezuela.png" alt="escudo venezuela" width="80px" height="80px">
-                </td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="4">
-                    eliminatoria al mundial</td>
-            </tr>
-        </tfoot>
-    </table> -->
-
-  
+    <div class="background"></div>
+    <div class="centering">
+        <form action="" class="my_form">
+            <div class="login_welcome">
+                <img src="https://cdn.pixabay.com/photo/2022/10/30/02/09/astronaut-7556460_1280.jpg" alt=""
+                    class="login">
+                <h1>INICIAR SESION</h1>
+            </div>
+            <div class="text_field">
+                <label for="">Email</label>
+                <input type="email" id="email" name="email" aria-label="Email"
+                    placeholder="Ingrese su correo electronico" required>
+                <img src="data:image/png;base64,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"
+                    alt="email">
+            </div>
+            <div class="text_field">
+                <label for="password">password</label>
+                <input type="text" id="password" name="password" placeholder="ingrese su credencial" required>
+                <img src="data:image/png;base64,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"
+                    alt="password">
+            </div>
+            <input type="submit" class="my_form_button" value="Login">
+            <div class="my_form_actions">
+                <div class="my_form">
+                    <span>Olvidaste tu contraseña</span>
+                    <a href="#" title="Recuperar contraseña"> Recuperar contraseña</a>
+                </div>
+                <div class="my_form_signup">
+                    <a href="#" title="Create Account"> Crear cuenta</a>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
